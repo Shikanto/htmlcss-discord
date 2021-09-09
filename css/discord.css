@@ -16,8 +16,7 @@
 
 .container{
 	max-width:920px;
-	margin:auto;
-    width: 100%;
+	margin:0 auto;
 }
 
 .col-1_6{
@@ -30,23 +29,22 @@
 
 .col-4_6{
 	width: calc(100%/6 * 4);
-}
+}   
 
-[class*="col-"] {
-	float: left;
-}
+.row > * {
+    float: left;
+  }
 
 header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position-y: center;
+    padding: 10px 0;
 }
 
 nav div ul{
     list-style: none;
-    text-align: center;
-    line-height: 38px;
-    
+    text-align: center; 
 }
 
 nav div ul li{
@@ -60,11 +58,13 @@ nav div ul li a{
 }
 
 .btn{
-    border-radius: 15px;
+    border-radius: 28px;
     background-color: white;
     color: black;
     font-weight: bold;
-    text-decoration: none
+    text-decoration: none;
+    padding: 18px 28px;
+    line-height: 3.5;
 }
 
 .btn-small{
@@ -73,14 +73,62 @@ nav div ul li a{
     
 }
 
+.btn-black{
+    background-color: black;
+}
+
 .text-white{
     color: white;
 }
 
-.align-right{
+.text-right{
     text-align: right;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.align-center{
+    margin: 0 auto;
+    float: none;
+}
+
+
 a.btn.btn-small, nav div ul{
-    line-height: 38px;
+    line-height: 34px;
+}
+
+.col-4_6 h1{
+    padding-bottom: 20px;
+}
+
+.row-hero p{
+    line-height: 1.625;
+    margin-bottom: 20px;
+}
+
+.row-hero{
+    padding: 40px 0;
+}
+
+.container-buttons-header a:first-child{
+    margin-right: 20px;
+}
+
+.section-text h2{
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.section-text p{
+    line-height: 1.5;
+}
+
+.section-img{
+    width: 90%;
+}
+
+section .container .row{
+    padding: 60px;
 }
