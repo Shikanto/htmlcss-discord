@@ -4,9 +4,35 @@
     box-sizing: border-box;
 }
 
+header{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position-y: center;
+    padding: 10px 0;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+hr{
+    border: 1px solid;
+    margin: 25px 0;
+}
+
+/* ***** SELETTORI AVANZATI ***** */
+
 .row > .float-right{
 	float:right;
 }
+
+.row > * {
+    float: left;
+  }
 
 .row::after{
 	content:"";
@@ -14,10 +40,88 @@
 	clear:both
 }
 
-.container{
-	max-width:920px;
-	margin:0 auto;
+nav div ul, footer div ul{
+    list-style: none;
 }
+
+nav div ul li{
+    display: inline-block;
+}
+
+nav div ul li a, footer div ul li a{
+    text-decoration: none;
+}
+
+nav div ul li a{
+    padding: 0 18px;
+}
+
+footer div ul li a{
+    display: inline-block;
+    padding: 8px 0;
+}
+
+a.btn.btn-small, nav div ul{
+    line-height: 34px;
+}
+
+.col-4_6 h1{
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.row-hero p{
+    line-height: 1.625;
+    margin-bottom: 20px;
+}
+
+.container-buttons-header a:first-child{
+    margin-right: 20px;
+}
+
+
+section .container .row{
+    padding: 100px 0;
+}
+
+.section-text h2{
+    font-size: 40px;
+}
+
+.section-text p{
+    line-height: 1.5;
+}
+
+.section-text.float-right{
+    padding-right: 25px;
+    padding-top: 20px;
+}
+
+.float-right .section-img{
+    padding-left: 20px;
+}
+
+.section-text.text-center h2{
+    padding-bottom:20px;
+}
+
+.btn.bg-light_purple{
+    margin-top: 30px;
+}
+
+.text-center.align-center h3{
+    margin-bottom: 30px;
+}
+
+.footer-container-icons i{
+    padding-right: 18px;
+}
+
+footer .container{
+    padding: 60px 0;
+}
+
+/* ***** CLASS UTILITY ******/
 
 .col-1_6{
 	width: calc(100% / 6);
@@ -31,32 +135,6 @@
 	width: calc(100%/6 * 4);
 }   
 
-.row > * {
-    float: left;
-  }
-
-header{
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-    background-position-y: center;
-    padding: 10px 0;
-}
-
-nav div ul{
-    list-style: none;
-    text-align: center; 
-}
-
-nav div ul li{
-    display: inline-block;
-}
-
-nav div ul li a{
-    text-decoration: none;
-    padding: 0 18px;
-    font-weight: bold;
-}
-
 .btn{
     border-radius: 28px;
     background-color: white;
@@ -69,7 +147,7 @@ nav div ul li a{
 
 .btn-small{
     padding: 11px;
-    font-size: 12px;
+    font-size: 14px;
     
 }
 
@@ -79,6 +157,10 @@ nav div ul li a{
 
 .text-white{
     color: white;
+}
+
+.text-purple{
+    color:#7289da;
 }
 
 .text-right{
@@ -94,41 +176,53 @@ nav div ul li a{
     float: none;
 }
 
-
-a.btn.btn-small, nav div ul{
-    line-height: 34px;
+.container{
+	max-width:920px;
+	margin:0 auto;
 }
 
-.col-4_6 h1{
-    padding-bottom: 20px;
-}
-
-.row-hero p{
-    line-height: 1.625;
-    margin-bottom: 20px;
-}
-
-.row-hero{
-    padding: 40px 0;
-}
-
-.container-buttons-header a:first-child{
-    margin-right: 20px;
-}
-
-.section-text h2{
-    font-size: 40px;
+.section-text{
+    padding-left: 25px;
     padding-top: 20px;
 }
 
-.section-text p{
-    line-height: 1.5;
-}
-
 .section-img{
-    width: 90%;
+    max-width: 90%;
 }
 
-section .container .row{
-    padding: 60px;
+.bg-light_grey{
+    background-color: lightgray;
+}
+
+.bg-light_purple{
+    background-color: #8ea1e1;
+}
+
+.bg-dark_grey{
+    background-color: #23272a;
+}
+/* ***** CLASS ***** */
+
+.row-hero{
+    padding: 60px 0;
+}
+
+.fa-long-arrow-alt-down{
+    padding-right: 15px;
+}
+
+.stars{
+    position: relative;
+    top: 20px;
+}
+
+
+.flag{
+    width: 24px;
+    vertical-align: middle;
+    border-radius: 1px;
+}
+
+.select-language{
+    margin:30px 0;
 }
